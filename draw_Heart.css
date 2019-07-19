@@ -1,9 +1,13 @@
+:root {
+  --Dodger_Blue:DodgerBlue;
+  --white: #ffffff;
+}
 body{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background:#fff;
+  background:var(--white);
   overflow: hidden;
 }
 
@@ -16,13 +20,12 @@ h2 {
   left:5%;
   position: absolute;
   font-weight: normal;
-  color: DodgerBlue;
+  color: var(--Dodger_Blue);
 }
 .box_heart{
   position: relative;
   width: 240px;
   height:220px;
-
 }
 .D_heart {
   position: absolute;
@@ -31,123 +34,53 @@ h2 {
   animation: rotate1 10s infinite linear;
 }
 
-.heart-shape{
- margin: 10px;
- position: relative;
- float: right;
+.heart-shape,.heart-shape2 , .heart-shape3 , .heart-shape4{
+  margin: 10px;
+  position: relative;
   width: 100px;
   height: 100px;
+  background-color:var(--Dodger_Blue);
+}
+
+.heart-shape{
+   float: right;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
-  background-color: DodgerBlue;
 }
-.heart-shape:before,
-.heart-shape:after{
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  content: '';
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: DodgerBlue;
-}
-.heart-shape:before{
-  bottom: 0px;
-  left: -50px;
-}
-.heart-shape:after{
-  top: -50px;
-  right: 0px;
-}
-
 .heart-shape2{
- margin: 10px;
- position: relative;
- float: left;
-  width: 100px;
-  height: 100px;
+  float: left;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  background-color: DodgerBlue;
-}
-.heart-shape2:before,
-.heart-shape2:after{
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  content: '';
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: DodgerBlue;
-}
-.heart-shape2:before{
-  bottom: 0px;
-  left: -50px;
-}
-.heart-shape2:after{
-  top: -50px;
-  right: 0px;
 }
 
 .heart-shape3{
- margin: 10px;
- position: relative;
- float: left;
-  width: 100px;
-  height: 100px;
+   float: left;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  background-color: DodgerBlue;
-}
-.heart-shape3:before,
-.heart-shape3:after{
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  content: '';
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: DodgerBlue;
-}
-.heart-shape3:before{
-  bottom: 0px;
-  left: -50px;
-}
-.heart-shape3:after{
-  top: -50px;
-  right: 0px;
 }
 
 .heart-shape4{
- margin: 10px;
- position: relative;
- float: right;
-  width: 100px;
-  height: 100px;
+  float: right;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  background-color: DodgerBlue;
 }
-.heart-shape4:before,
-.heart-shape4:after{
+
+.heart-shape:before, .heart-shape:after ,
+.heart-shape2:before, .heart-shape2:after,
+.heart-shape3:before,.heart-shape3:after,
+.heart-shape4:before,.heart-shape4:after{
   position: absolute;
   width: 100px;
   height: 100px;
@@ -158,49 +91,42 @@ h2 {
   border-radius: 50%;
   background-color: DodgerBlue;
 }
-.heart-shape4:before{
+.heart-shape:before ,.heart-shape2:before , .heart-shape3:before , .heart-shape4:before{
   bottom: 0px;
   left: -50px;
 }
-.heart-shape4:after{
+.heart-shape:after , .heart-shape2:after , .heart-shape3:after , .heart-shape4:after{
   top: -50px;
   right: 0px;
 }
 
+.Circle-shape1 , .Circle-shape2 , .Circle-shape3{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 360px;
+  display:grid;
+}
+
 .Circle-shape1{
-    position: absolute;
-    align-items: center;
-    justify-content: center;
     top: 10%;
     left: 12%;
     width: 180px;  /*60%*/
     height: 180px;
-    background:#fff;
-    border-radius: 360px;
-    display:grid;
+    background:var(--white);
   }
 .Circle-shape2{
-    position: absolute;
-    align-items: center;
-    justify-content: center;
     margin: 5%;
     width: 160px;
     height: 160px;
-    background:DodgerBlue;
-    border-radius: 360px;
-    display:grid;
+    background:var(--Dodger_Blue);
   }
 .Circle-shape3{
-    position: absolute;
-    align-items: center;
-    justify-content: center;
     top: 3%;
     left: 16%;
     width: 140px;
     height: 150px;
-    background:#fff;
-    border-radius: 360px;
-    display:grid;
+    background:var(--white);
   }
 
 
